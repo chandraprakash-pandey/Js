@@ -23,4 +23,4 @@ const url = "https://chandraprakashpandey.com/pandey%20"
 console.log(url.replace("%20", "-"));
 
 const string2 = "This is my name"
-console.log(string2.split(" ")); //maded string a array
+console.log(string2.split(" ")); //made string a array
