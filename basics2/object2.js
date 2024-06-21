@@ -30,8 +30,34 @@ const obj4 = Object.assign({} , obj1 , obj2) // same output its good to use
 
 
 const obj3 = {...obj1, ...obj2} // most used use this
-// console.log(obj3);
+// console.log(typeof obj3);
 
-console.log(tinder);
-console.log(Object.keys(tinder)); // access all keys in array
-console.log(Object.values(tinder));
+// console.log(tinder);
+// console.log(Object.keys(tinder)); // access all keys in array
+// console.log(Object.values(tinder));
+// console.log(Object.entries(tinder));
+
+const course = {
+    coursename: "JS in hindi",
+    price: 999,
+    teacher: "HItesh"
+}
+
+const {coursename} = course // to use course name again and again in code  use this
+const {coursename: nameofcourse} = course // to use course name again and again in code  use this
+console.log(coursename);
+console.log(nameofcourse); //destructure of course
+
+// Json API
+
+{
+    "name": "pandey",
+    "course": "JS in hindi",
+    "price": "free"
+}
+
+[
+    {},
+    {},
+    {}
+]
