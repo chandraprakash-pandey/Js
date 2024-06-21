@@ -50,11 +50,11 @@ console.log(nameofcourse); //destructure of course
 
 // Json API
 
-{
-    "name": "pandey",
-    "course": "JS in hindi",
-    "price": "free"
-}
+// {
+//     "name": "pandey",
+//     "course": "JS in hindi",
+//     "price": "free"
+// }
 
 [
     {},
