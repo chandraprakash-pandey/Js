@@ -25,7 +25,7 @@ map.set("IN", "Indian")
 //     console.log(key);
 // }
 for (const [key, value] of map) {
-    // console.log(`${key} = ${value}`);
+    console.log(`${key} = ${value}`);
 }
 
 let myObj = {
@@ -33,6 +33,6 @@ let myObj = {
     age: 18
 }
 
-for (const keys of myObj) {
-    console.log(keys);
-}
+// for (const keys of myObj) {
+    // console.log(keys); // obj can't be iterate
+// }
