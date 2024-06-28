@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    newli = (item) => {
+        const li = document.createElement("li")
+        // li.className = item
+        li.innerHTML = item
+        document.querySelector("ul").appendChild(li)
+    }
+
+    optiway = (item) => {
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(item))
+        document.querySelector("ul").appendChild(li)
+    }
+    optiway("Java (Optimized way)") 
+    optiway("Django (Optimized way)")
+    newli("C++")
+    newli("Python")
+    newli("Ruby")
+
+    // Edit
+    const seclang = document.querySelector("li:nth-child(2)")
+    // seclang.innerHTML = "MERN"
+    const newliCreate = document.createElement("li")
+    newliCreate.textContent = "MERN Stack"
+    seclang.replaceWith(newliCreate)
+
+    // Edit
+    const firstlan = document.querySelector("li:first-child")
+    firstlan.outerHTML = "<li>Full Stack</li>"
+
+    //remove
+    const lastlan = document.querySelector("li:last-child")
+    lastlan.remove()
+    
+</script>
+</html>
