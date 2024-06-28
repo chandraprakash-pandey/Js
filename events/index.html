@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body>
+    <div>
+        <ul id="images">
+            <li><img width = "100rem" src="dice1.png" id="d1"></li>
+            <li><img width = "100rem" src="dice2.png" id="d2"></li>
+            <li><img width = "100rem" src="dice3.png" id="d3"></li>
+            <li><img width = "100rem" src="dice4.png" id="d4"></li>
+            <li><img width = "100rem" src="dice5.png" id="d5"></li>
+            <li><img width = "100rem" src="dice6.png" id="d6"></li>
+            <li><a href="https://www.google.com/">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.getElementById("images").addEventListener("click", function (e) {
+        if(e.target.tagName === "IMG"){
+            let removeIt = e.target.parentNode
+            console.log(removeIt)
+            removeIt.remove()
+        }
+    })
+</script>
+</html>
